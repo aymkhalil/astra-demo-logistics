@@ -134,6 +134,7 @@ func main() {
 				Val_Str:        val_str,
 				Val2_Str:       val2_str,
 			},
+			EventTime: time.Now(),
 		}
 
 		_, err = producer.Send(ctx, &msg)
